@@ -31,6 +31,8 @@ namespace HashValidationCore
             HV.HVU.ClearFile(HV.programPath + HV.HVU.FormatLogFile());
             HV.HVH.HashValidationInit();
 
+            HV.HVU.Log("Finished. Press any key to exit.");
+
             Console.ReadKey();
         }
     }

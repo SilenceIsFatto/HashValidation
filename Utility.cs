@@ -10,13 +10,23 @@ namespace HashValidationUtility
     public class HashValidation
     {
         private string programName;
+        private string hashFileURL;
         public string programPath;
         public int debugLevel;
         public HashValidation()
         {
             this.programName = "HashValidation";
+            this.hashFileURL = GetHashURL();
             this.programPath = GetExecutionDir();
             this.debugLevel = SetDebugLevel(2);
+        }
+
+        private string GetHashURL()
+        {
+            // Can add UI related stuff here maybe
+            string hashFileURL = "https://raw.githubusercontent.com/SilenceIsFatto/hashes/refs/heads/main/hashes_remote.json";
+
+            return hashFileURL;
         }
 
         public void CreateDirectory(string dir)
@@ -75,7 +85,6 @@ namespace HashValidationUtility
         public void DownloadHashFile(string fileName)
         {
             string path = FormatProgramDir(fileName);
-            string hashFileURL = "https://raw.githubusercontent.com/SilenceIsFatto/hashes/refs/heads/main/hashes_remote.json";
             try
             {
                 using (var client = new System.Net.Http.HttpClient())
