@@ -21,6 +21,7 @@
             HV.HVU.ClearFile(HV.HVU.programPath + HV.HVU.FormatLogFile());
             HV.HVH.HashValidationInit();
 
+            Console.WriteLine("");
             HV.HVU.Log("Finished. Press any key to exit.");
 
             Console.ReadKey();
