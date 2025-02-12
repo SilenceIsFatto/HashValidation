@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Configurations>Debug;Release</Configurations>
-    <BaseOutputPath>F:\code stuff\cs\HashValidation\build</BaseOutputPath>
+    <BaseOutputPath>$(SolutionDir)\build</BaseOutputPath>
     <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
     <PackageOutputPath>$(OutputPath)</PackageOutputPath>
     <PublishTrimmed>False</PublishTrimmed>

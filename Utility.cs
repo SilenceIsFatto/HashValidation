@@ -1,9 +1,4 @@
-﻿using System;
-using System.IO;
-using System.IO.Pipes;
-using System.Net;
-using System.Net.Http;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 
 namespace HashValidationUtility
 {
@@ -18,7 +13,7 @@ namespace HashValidationUtility
             this.programName = "HashValidation";
             this.hashFileURL = GetHashURL();
             this.programPath = GetExecutionDir();
-            this.debugLevel = SetDebugLevel(2);
+            this.debugLevel = SetDebugLevel(0);
         }
 
         private string GetHashURL()

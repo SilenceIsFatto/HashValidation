@@ -1,7 +1,5 @@
-﻿using System.Security.Cryptography;
-using HashValidationUtility;
+﻿using HashValidationUtility;
 using HashValidationJson;
-using System.Text.Json;
 
 namespace HashValidationHash
 {
