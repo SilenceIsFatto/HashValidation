@@ -19,7 +19,7 @@ namespace HashValidationUtility
         private string GetHashURL()
         {
             // Can add UI related stuff here maybe
-            string hashFileURL = "https://raw.githubusercontent.com/SilenceIsFatto/hashes/refs/heads/main/hashes_remote.json";
+            string hashFileURL = "https://raw.githubusercontent.com/SilenceIsFatto/HashValidation/refs/heads/master/hashes_remote.json";
 
             return hashFileURL;
         }
